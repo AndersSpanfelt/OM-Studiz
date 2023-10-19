@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <!-- Meta-tags og link til stylesheet -->
+    <meta charset="utf-8" />
+    <title>Studiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Håber på at kunne få bedre studievaner" />
+    <!-- Link til CSS-fil -->
+    <link rel="stylesheet" type="text/css" href="css/forside.css" />
+  </head>
+  <body style="font-family: Arial, sans-serif">
+    <!-- Header og navigation -->
+    <header>
+      <nav class="navigation__container">
+        <!-- Overskrift og mobilmenu ikoner -->
+        <h1>STUDIZ</h1>
+        <label for="mobileicon" class="mobileiconlabel">&#9745;</label>
+        <input type="checkbox" id="mobileicon" class="mobileicon" />
+        <!-- Menu items -->
+        <div class="menuitems__container">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">STUDIEHJÆLP</a>
+            <div class="dropdown-content">
+              <a href="studievaner.html">GODE STUDIEVANER</a>
+              <a href="balance.html">FÅ BALANCE I HVERDAGEN</a>
+              <a href="stress.html">ET STUDIELIV UDEN STRESS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">VÆRKTØJER</a>
+            <div class="dropdown-content">
+              <a href="#">KALENDER</a>
+              <a href="#">TAG STRESSTESTEN</a>
+              <a href="#">WEBINARS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">OM OS</a>
+            <div class="dropdown-content">
+              <a href="#">VISION/MISSION</a>
+              <a href="#">BRUGERANMELDELSER</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">KONTAKT</a>
+            <div class="dropdown-content">
+              <a href="#">KONTAKTFORMULAR</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <!-- Firmaets logo -->
+        <a href="index.html" class="companylogo"
+          ><img src="images/logo.png" alt="logo" width="50"
+        /></a>
+        <div class="header"></div>
+      </nav>
+    </header>
+
+    <!-- Hovedsektion -->
+    <h3>Hos Studiz handler det om dig og din udvikling</h3>
+    <h4>
+      Vi hjælper dig med at udvikle sunde og effektive studievaner, så du kan
+      opnå succes i dit studie
+    </h4>
+    <div class="row">
+      <div class="column">
+        <img src="images/handihand.png" alt="hånd" style="width: 50%" />
+        <p>Træk vejret dybt, lad bekymringerne slippe</p>
+      </div>
+
+      <div class="column">
+        <img src="images/fokus.png" alt="fokus" style="width: 100%" />
+        <p>Skab dit eget rum og studér</p>
+      </div>
+
+      <div class="column">
+        <img src="images/vibe.png" alt="vibe" style="width: 52%" />
+        <p>Bevare godt humør og nyd rejsen</p>
+      </div>
+    </div>
+
+    <!-- Nyeste artikler -->
+    <h2>NYESTE ARTIKLER</h2>
+    <div class="row">
+      <div class="column">
+        <a href="studievaner.html">
+          <img src="images/bog.png" alt="bog" style="width: 85%" />
+          <p>Gode studievaner</p>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="balance.html">
+          <img src="images/natur.png" alt="natur" style="width: 100%" />
+          <p>Få balance i hverdagen</p>
+        </a>
+      </div>
+      <div class="column">
+        <a href="stress.html">
+          <img src="images/stress.png" alt="stress" style="width: 100%" />
+          <p>Et studieliv uden stress</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page_footer">
+      <!-- Følg os sektion -->
+      <div class="footer_card">
+        <h4 class="footer_card_heading">Følg os</h4>
+        <a href="#"
+          ><img src="images/fb.png" alt="facebook icon" class="some_image"
+        /></a>
+        <a href="#"
+          ><img src="images/insta.png" alt="instagram icon" class="some_image"
+        /></a>
+      </div>
+
+      <!-- Kontakt sektion -->
+      <div>
+        <div class="footer_card">
+          <h4 class="footer_card_heading">Kontakt</h4>
+          <address>
+            Studiz A/S
+            <br />
+            Vejlegade 10<br />
+            8000, Aarhus<br />
+            Telefon: (+45) 26362636
+            <br />
+            mail: Studiz@gmail.com<br />
+          </address>
+        </div>
+      </div>
+    </footer>
+    <!-- Tilbage til toppen knap -->
+    <button id="toTopBtn">Tilbage til toppen</button>
+    <!-- JavaScript-kode -->
+    <script>
+      document
+        .getElementById("toTopBtn")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      window.onscroll = function () {
+        var scrollBtn = document.getElementById("toTopBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

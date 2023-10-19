@@ -1,0 +1,292 @@
+/* CSS til hele din hjemmeside */
+
+/* Basis CSS-nulstilling */
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Container til sideindhold */
+.page__body {
+    font-family: Arial, sans-serif;
+    max-width: 1680px;
+    font-style: normal;
+}
+
+/* Navigation for mobile enheder */
+.navigation__container {
+    background: rgb(100, 175, 250);
+    position: sticky;
+    top: 0;
+}
+
+/* Stil for mobilikon og etiket */
+.mobileiconlabel {
+    display: block;
+    color: rgb(100, 175, 250);
+    background: rgb(100, 175, 250);
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px;
+    flex-direction: column;
+}
+
+/* Skjul tekstboks og menuitems indtil der klikkes */
+.menuitems__container,
+.mobileicon {
+    display: none;
+}
+
+/* Vis menuitems når mobileicon-label er klikket */
+.navigation__container input:checked~.menuitems__container {
+    display: block;
+}
+
+/* Virksomhedslogo styling */
+.companylogo {
+    position: absolute;
+    color: black;
+    top: 1%;
+    left: 10px;
+    width: 1px;
+}
+
+/* Tilbageknap styling */
+.backlink1 {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    float: left;
+    border-radius: 50%;
+}
+
+/* Flex container til rækker */
+.row {
+    display: flex;
+    margin: 0px 20px;
+}
+
+/* Opret tre lige store kolonner ved siden af hinanden */
+.column {
+    flex: 30.33%;
+    padding: 15px;
+}
+
+/* Regler for widescreen (skærm bredere end 800px) */
+@media screen and (min-width: 800px) {
+
+    /* Skjul mobilikonet og etiketten */
+    .mobileiconlabel,
+    .mobileicon {
+        display: none;
+    }
+
+    /* Baggrundsfarve ved hover for menuelementer */
+    .menuitem:hover {
+        background: #D8E7FA;
+    }
+
+    /* Juster virksomhedslogoets position */
+    .companylogo {
+        left: 10px;
+    }
+
+    /* Flex container til menuelementer */
+    .menuitems__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Stil for menuelement 1 */
+    .menuitem1 {
+        margin: 0px 15px;
+        font-size: large;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    /* Dropdownknap styling */
+    .dropdown .dropbtn {
+        margin: 0px 15px;
+        font-size: large;
+        border: none;
+        outline: none;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+    }
+
+    /* Dropdownindhold (skjult som standard) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+    }
+
+    /* Links i dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Blå baggrundsfarve ved hover for dropdown-links */
+    .dropdown-content a:hover {
+        background-color: rgb(100, 175, 250);
+    }
+
+    /* Vis dropdown-menuen ved hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: rgb(100, 175, 250);
+    }
+}
+
+/* Body styling */
+body {
+    background-color: #D8E7FA;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Tilbage til toppen */
+#toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#toTopBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Global styling */
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Styling */
+a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Artikelsektion styling */
+.undertekst {
+    border-bottom: 2px solid black;
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Main sektion styling */
+.main {
+    display: flex;
+}
+
+/* Venstre kolonne styling */
+.article_left {
+    flex: 80%;
+    padding: 30px;
+    text-align: left;
+    font-size: medium;
+    border-right: 2px solid #D8E7FA;
+    margin: 0 100px;
+    width: 350%;
+}
+
+/* Main sektion overskrift styling */
+.main h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Ordnet liste styling */
+ol.ab {
+    background: rgb(100, 175, 250);
+    ;
+    padding: 30px;
+    width: 45%;
+    text-align: left;
+}
+
+ol li {
+    padding: 4px;
+    margin-left: 35px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+/* Uordnet liste styling */
+ul.firstlist,
+ul.secondlist,
+ul.rightlist {
+    padding: 2px;
+    font-style: italic;
+    margin-top: 4px;
+    width: 100%;
+    list-style-type: none;
+    font-size: smaller;
+}
+
+/* Tilbageknap styling */
+.backlink1 {
+    color: #333333;
+}
+
+/* Footer styling */
+.footer {
+    border-top: #000;
+}
+
+/* Page footer styling */
+.page_footer {
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 0.5px;
+}
+
+/* Styling af billeder i footer */
+.some_image {
+    width: 32px;
+    margin-right: 6px;
+}
+
+/* Overskriftsstyling i footer-kort */
+.footer_card_heading {
+    margin-bottom: 5px;
+}
+
+/* Justering af overskriftsstyling i footer */
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 7px;
+}

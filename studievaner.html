@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <!-- Meta-tags og link til stylesheet -->
+    <meta charset="utf-8" />
+    <title>GODESTUDIEVANER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bedre studievaner" />
+    <!-- Link til CSS-fil -->
+    <link rel="stylesheet" type="text/css" href="css/studievaner.css" />
+  </head>
+
+  <body
+    style="
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <!-- Header og navigation -->
+    <header>
+      <nav class="navigation__container">
+        <!-- Overskrift og mobilmenu ikoner -->
+        <h1>STUDIZ</h1>
+        <label for="mobileicon" class="mobileiconlabel">&#9745;</label>
+        <input type="checkbox" id="mobileicon" class="mobileicon" />
+        <!-- Menu items -->
+        <div class="menuitems__container">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">STUDIEHJÆLP</a>
+            <div class="dropdown-content">
+              <a href="studievaner.html">GODE STUDIEVANER</a>
+              <a href="balance.html">FÅ BALANCE I HVERDAGEN</a>
+              <a href="stress.html">ET STUDIELIV UDEN STRESS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">VÆRKTØJER</a>
+            <div class="dropdown-content">
+              <a href="#">KALENDER</a>
+              <a href="#">TAG STRESSTESTEN</a>
+              <a href="#">WEBINARS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">OM OS</a>
+            <div class="dropdown-content">
+              <a href="#">VISION/MISSION</a>
+              <a href="#">BRUGERANMELDELSER</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">KONTAKT</a>
+            <div class="dropdown-content">
+              <a href="#">KONTAKTFORMULAR</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <!-- Firmaets logo -->
+        <a href="index.html" class="companylogo"
+          ><img src="images/logo.png" alt="logo" width="50"
+        /></a>
+        <div class="header"></div>
+      </nav>
+    </header>
+
+    <!-- Backlink tilbage til forrige side -->
+    <a href="#" class="backlink1" onclick="history.back();"> &lt;Tilbage</a>
+
+     <!-- Hovedindhold -->
+    <h2>Gode studievaner</h2>
+    <div class="main">
+      <div class="study-habit-container">
+        <!-- Første boks om studievaner -->
+        <div class="study-habit-box">
+          <h5>Lav en Plan, Du Kan Holde</h5>
+          <p>
+            En grundlæggende nøgle til succesfulde studier er at have en plan. Skab
+            en enkel studieplan med faste tidspunkter for arbejde og små pauser.
+            Denne tilgang hjælper med at etablere struktur og reducerer stress ved
+            at skabe klare retningslinjer.
+          </p>
+        </div>
+
+        <!-- Anden boks om studievaner -->
+        <div class="study-habit-box">
+          <h5>Opdel Opgaverne - Gør Det Overkommeligt</h5>
+          <p>
+            Store opgaver kan virke overvældende. Gør dem mere håndterbare ved at
+            opdele dem i mindre bidder og fokusere på én ting ad gangen. Denne
+            strategi ikke kun gør opgaver mere overkommelige, men reducerer også
+            følelsen af overvældelse.
+          </p>
+        </div>
+      </div>
+
+      <div class="study-habit-container">
+        <!-- Tredje boks om studievaner -->
+        <div class="study-habit-box">
+          <h5>Prioriter og Pas på Dig Selv</h5>
+          <p>
+            Lær at sige nej til unødvendige distraktioner og prioriter dine opgaver.
+            Skab plads til selvpleje, da en sund balance mellem studier og
+            afslapning er afgørende for trivsel.
+          </p>
+        </div>
+
+        <!-- Fjerde boks om studievaner -->
+        <div class="study-habit-box">
+          <h5>Dit Studieliv, Dine Vaner</h5>
+          <p>
+            Gode studievaner er personlige og evolverer med tiden. Find, hvad der
+            fungerer bedst for dig, og tøv ikke med at tilpasse dine vaner
+            undervejs. Investeringen i at etablere sunde studievaner betaler sig i
+            form af øget succes og reduceret stress. Giv dig selv tilladelse til at
+            lære og vokse gennem dine studievaner, og lad dem blive dit hemmelige
+            våben til at mestre studielivet.
+          </p>
+        </div>
+      </div>
+    </div>
+        <!-- Kilde -->
+        <h6 class="a_link">
+          <a href="https://studypedia.au.dk/studievaner" target="_blank">
+            kilde: https://studypedia.au.dk/studievaner</a
+          >
+        </h6>
+      </div>
+    </div>
+
+    <!-- Subscription Pop-up -->
+    <div id="subscriptionPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Abonner på vores nyhedsbrev</h2>
+        <p>
+          Få de seneste opdateringer om gode studievaner direkte i din indbakke.
+        </p>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Abonner</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page_footer">
+      <!-- Følg os sektion -->
+      <div class="footer_card">
+        <h4 class="footer_card_heading">Følg os</h4>
+        <a href="#"
+          ><img src="images/fb.png" alt="facebook icon" class="some_image"
+        /></a>
+        <a href="#"
+          ><img src="images/insta.png" alt="instagram icon" class="some_image"
+        /></a>
+      </div>
+
+      <!-- Kontakt sektion -->
+      <div>
+        <div class="footer_card">
+          <h4 class="footer_card_heading">Kontakt</h4>
+          <address>
+            Studiz A/S
+            <br />
+            Vejlegade 10<br />
+            8000, Aarhus<br />
+            Telefon: (+45) 26362636
+            <br />
+            mail: Studiz@gmail.com<br />
+          </address>
+        </div>
+      </div>
+    </footer>
+    <!-- Tilbage til toppen knap -->
+    <button id="toTopBtn">Tilbage til toppen</button>
+    <!-- JavaScript-kode -->
+    <script>
+      document
+        .getElementById("toTopBtn")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+      window.onscroll = function () {
+        var scrollBtn = document.getElementById("toTopBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("loaded");
+      });
+
+      // Display the subscription popup after a delay (e.g., 5 seconds)
+      setTimeout(function () {
+        document.getElementById("subscriptionPopup").style.display = "block";
+      }, 5000);
+
+      // Close the popup
+      function closePopup() {
+        document.getElementById("subscriptionPopup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
